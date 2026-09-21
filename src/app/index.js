@@ -67,11 +67,84 @@ export default function Inicio(){
         
         />
         //===========================================
-        //BLOCO 2.1 - SEÇÃO JOGOS
+        //BLOCO 2.2 - SEÇÃO "Mais populares"
         //===========================================
 
+        {/* Mesma estrutura da seção anterior, mas com dados diferentes */}
+        <text style={StyleSheet.secaoTitulo}>Mais Populares</text>
+        {/*Título da segunda seção, reaproveitando o mesmo estilo "Seção Título" */}
+
+        <FlatList
+        data={populares}
+        //Desta vez a fonte de dados é o array "populares" (top 5 por nota)
+        keyExtractor={({item}) => item.id }
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        //Esconder o indicador de rolagem
+        renderItem={({item}) => <GameCard jogo={item}/>}
+        //Reutiliza o mesmo componente GameCard, provando que ele funciona com qualquer lista de jogos
+        
+        />
+        //===========================================
+        //BLOCO 2.3 - Botao "Ver todos jogos"
+        //===========================================
+        {/* Pressable oferece mais controle sobre o estilo e feedback visual */}
+        <pressable
+        style={styles.botao}
+        //Aplica o estilo visual no botao
+        onPress={() => router.push("./jogos")}
+        //onPress: Função executada quando o usuário toca no botão
+        //router.push("./jogos") navega para a rota "/jogos"
+        >
+            <text style={styles.textobotao}>Ver todos os Jogos</text>
+
+        </pressable>
 
         </ScrollView>
         );
 }
+        
+        //===========================================
+        //BLOCO 3 - ESTILOS
+        //===========================================
+        const styles = StyleSheet.create({
+            container: {
+                flex: 1,
+                backgroundColor: cores.fundo,
+            },
+            conteudo: {
+                padding: 20,
+                paddingBottom: 40,
+            },
+            titulo: {
+                fontSize: 32,
+                fontWeight:"bold",
+                color: cores.textoPrincipal,
+            },
+            subtitulo: {
+                fontSize: 15,
+                color: cores.textoSecundario,
+                marginTop: 4,
+                marginBottom: 24,
+            },
+            secaoTitulo: {
+                fontSize: 18,
+                fontWeight: "bold",
+                color: cores.textoPrincipal,
+                marginTop: 8,
+                marginBottom: 12,
+            },
+            botao: {
+                backgroundColor: cores.roxo,
+                borderRadius: 12,
+                paddingVertical: 14,
+                alignItems: "center",
+                marginTop: 24,
+            },
+            textoBotao: {
+                color: cores.textoPrincipal,
+                fontSize: 16,
+                fontWeight: "bold",
+            }
+        })
         
