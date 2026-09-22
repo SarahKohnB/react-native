@@ -27,41 +27,40 @@ export default function GameCard ({jogo}){
         </Pressable>
     )
 }
-    //===========================================
-    //INICIO
-    //===========================================
 
-    const styles = StyleSheet.create({
-        card: {
-            backgroundColor: cores.fundoCard,
-            borderRadius: 12,
-            overflow: "hidden",
-            width: 158,
-            marginRight: 12,
-            borderWidth: 1,
-            borderColor: cores.borda,
-        },
-        imagem: {
-            width: "100%",
-            height: 110,
-        },
-        info: {
-            padding: 10,
-        },
-        nome: {
-            color: cores.textoPrincipal,
-            fontSize: 12,
-            fontWeight: "bold",
-        },
-        genero: {
-            color: cores.textoSecundario,
-            fontSize: 12,
-            marginTop: 2,
-        },
-        nota: {
-            color: cores.verde,
-            fontSize: 12,
-            marginTop: 4,
-            fontWeight: "600",
-        },
-    });
+// INICIO AQUI
+// ===============================
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: cores.fundoCard,
+    borderRadius: 12,
+    overflow: "hidden", 
+    width: 158, 
+    marginRight: 12, 
+    borderWidth: 1,
+    borderColor: cores.borda,
+  },
+  imagem: {
+    width: "100%",
+    height: 110,
+  },
+  info: {
+    padding: 10,
+  },
+  nome: {
+    color: cores.textoPrincipal,
+    fontSize: 14,
+    fontWeight: "bold",
+  },
+  genero: {
+    color: cores.textoSecundario,
+    fontSize: 12,
+    marginTop: 2,
+  },
+  nota: {
+    color: cores.verde,
+    fontSize: 12,
+    marginTop: 4,
+    fontWeight: "600",
+  },
+});
