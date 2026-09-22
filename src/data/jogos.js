@@ -4,8 +4,6 @@
     //===========================================
 
     export const jogos = [
-        
-
         {
             id: "1",
             nome: "Minecraft",
@@ -13,7 +11,7 @@
             nota: 4.8,
             plataforma: "PC, Console, Mobile",
             Descrição: "Um mundo feito de blocos onde você pode construir",
-            imagem: require("../../assets/games/minecraft.jpg"),
+            imagem: require("../../../assets/games/minecraft.jpg"),
             destaque: true,
 
         },
@@ -24,19 +22,19 @@
             nota: 4.5,
             plataforma: "PC, Console, Mobile",
             Descrição: "Batalha real em um  mundo em constante mudança, onde os jogadores competem para ver quem vai ser o ultimo sobrevivente",
-            imagem: require("../../assets/games/fortnite.jpg"),
+            imagem: require("../../../assets/games/fortnite.jpg"),
             destaque: true,
 
         },
 
         {
             id: "3",
-            nome: "BA Sports FC",
+            nome: "EA Sports FC",
             genero: "Esportes",
             nota: 4.3,
             plataforma: "PC, Console",
             Descrição: "Futebol que oferece experiências realistas",
-            imagem: require("../../assets/games/ba-sports-fc.jpg"),
+            imagem: require("../../../assets/games/ea-sports-fc.jpg"),
             destaque: true,
 
         },
@@ -47,7 +45,7 @@
             nota: 4.3,
             plataforma: "PC, Console, Mobile",
             Descrição: "Varios jogos dentro de um jogo",
-            imagem: require("../../assets/games/roblox.jpg"),
+            imagem: require("../../../assets/games/roblox.jpg"),
             destaque: true,
 
         },
@@ -58,7 +56,7 @@
             nota: 4.4,
             plataforma: "PC, Console, Mobile",
             Descrição: "Futebol com carros turbinados...",
-            imagem: require("../../assets/games/rocket-league.jpg"),
+            imagem: require("../../../assets/games/rocket-league.jpg"),
             destaque: false,
 
         },
@@ -69,7 +67,7 @@
             nota: 4.7,
             plataforma: "PC, Console, Mobile",
             Descrição: "Um jogo de tiro tático em equipe",
-            imagem: require("../../assets/games/valorant.jpg"),
+            imagem: require("../../../assets/games/valorant.jpg"),
             destaque: false,
 
         },
@@ -80,7 +78,7 @@
             nota: 4.2,
             plataforma: "PC, Console, Mobile",
             Descrição: "Simulador de vida real",
-            imagem: require("../../assets/games/the-sims.jpg"),
+            imagem: require("../../../assets/games/the-sims.jpg"),
             destaque: false,
 
         },
@@ -91,7 +89,7 @@
             nota: 4.1,
             plataforma: "PC, Console, Mobile",
             Descrição: "Descubra quem é o impostor",
-            imagem: require("../../assets/games/among-us.jpg"),
+            imagem: require("../../../assets/games/among-us.jpg"),
             destaque: false,
 
         },

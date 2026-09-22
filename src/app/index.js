@@ -14,13 +14,13 @@ import { View, text, Scrollview, FlatList, pressable, StyleSheet} from "react-na
 import { useRouter } from "expo-router";
 //acesso ao objeto router, tem a função de navegação baseada em arquivos (biblioteca)
 
-import GameCard from "../components/GameCard";
+import GameCard from "./components/GameCard";
 //Reutilizar componentes, isso evita duplicação de código e mantenha a consistência visual
 
-import { jogos } from "../data/jogos";
+import { jogos } from "./data/jogos";
 //Importante uma array de objetos do arquivo data/jogos.js
 
-import { cores } from "../data/tema";
+import { cores } from "./data/tema";
 //Importa a paleta de cores do app do arquivo data/tema.js
 
 //========================================================
